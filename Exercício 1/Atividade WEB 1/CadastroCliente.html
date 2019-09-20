@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de clientes</title>
+	<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+
+	<style>
+		h1 {
+			color: #57595A;
+			text-align: center;
+			font-family: fantasy;
+			font-size: 40px;
+		}
+		body {
+			background-color: #D8FCFF;
+		}
+
+		input{
+			width: 25%;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+
+		label{
+			font-family: fantasy;
+			font-size: 14pt;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		<h1>Dados do Cliente</h1>
+	</div>
+
+	<form method="post">
+		
+		<div>
+			<label for="nome">Nome:</label>
+			<br>
+			<input type="text" name="nome" id="nome" >
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="cpf">CPF/CNPJ:</label>
+			<br>
+			<input type="number" name="cpf" id="cpf" >
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="endereço">Endereço:</label>
+			<br>
+			<input type="text" name="endereço" id="endereço" >
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="telefone">Telefone:</label>
+			<br>
+			<input type="number" name="telefone" id="telefone" >
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="email">Email:</label>
+			<br>
+			<input type="text" name="email" id="email" >
+		</div>
+		
+		<br>
+
+		<button type="buton" class="btn btn-success"> Cadastrar </button>
+		<button type="buton" class="btn btn-info"> Limpar </button>
+		<a href="Atividade WEB 1.html" class="btn btn-danger">Voltar</a>
+
+		<br>
+		<br>
+		<br>
+
+	</form>
+
+</body>
+</html>

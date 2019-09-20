@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cadastro de Produtos</title>
+
+	<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+
+	<style>
+		h1 {
+			color: #57595A;
+			text-align: center;
+			font-family: fantasy;
+			font-size: 40px;
+		}
+		body {
+			background-color: #D8FCFF;
+		}
+
+		input{
+			width: 25%;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+
+		label{
+			font-family: fantasy;
+			font-size: 14pt;
+		}
+
+		
+
+	</style>
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		<h1>Dados do cadastro</h1>
+	</div>
+	
+	<form method="post">
+
+		<div>
+
+			<label for="nome">Nome:</label>
+			<br>
+			<input type="text" name="nome" id="nome" >
+
+		</div>
+
+		<br>
+
+		<div>
+			<label for="peso">Peso:</label>
+			<br>
+			<input type="number" name="peso" id="peso">
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="Unidade">Unidade: </label>
+			<br>
+			<select name="Unidade" id="Unidade">
+				<option disabled selected value="0">Selecione:</option>
+				<option value="1">Kg</option>
+				<option value="2">mg</option>
+				<option value="3">ml</option>
+				<option value="4">Litro</option> 
+			</select>
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="valor">Valor:</label>
+			<br>
+			<input type="number" name="valor" id="valor">
+		</div>
+
+		<br> 
+
+		<div>
+			<label for="valor">Valor:</label>
+			<br>
+			<input type="number" name="valor" id="valor">
+		</div>		
+
+		<br>
+
+		<div>
+			<label for="estoque">Estoque:</label>
+			<br>
+			<input type="number" name="estoque" id="estoque">
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="mercado">Mercado: </label>
+			<br>
+			<select name="mercado" id="mercado">
+				<option disabled selected value="0">Selecione:</option>
+				<option value="1">Externo</option>
+				<option value="2">Interno</option>
+
+			</select>
+		</div>
+		
+		<br>
+
+		<div>
+			<label for="fornecedor">Fornecedor: </label>
+			<br>
+			<select name="fornecedor" id="Fornecedor">
+				<option disabled selected value="0">Selecione:</option>
+				<option value="1">AmBev</option>
+				<option value="2">IDM</option>
+				<option value="3">Viva</option>
+				<option value="4">Hipermercado</option> 
+				<option value="5">Bretas</option>
+			</select>
+
+
+		</div>
+		
+		<br>
+
+		<button type="buton" class="btn btn-success"> Cadastrar </button>
+		<button type="buton" class="btn btn-info"> Limpar </button>
+		<a href="Atividade WEB 1.html" class="btn btn-danger">Voltar</a>
+
+		<br>
+		<br>
+		<br>
+
+	</form>
+
+</body>
+</html>
