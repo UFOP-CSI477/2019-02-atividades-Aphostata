@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo do IMC</title>
+
+	<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+	<script src="calculaIMC.js"></script>
+
+<style>
+		h1 {
+			text-align: center;
+			font-family: fantasy;
+			font-size: 40px;
+		}
+
+		input{
+			text-align: center;
+			size: 50px;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		label{
+			font-family: fantasy;
+			font-size: 14pt;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<form name="dados">
+
+		<div id="grupo1" class="form-group">
+			<label for="valor1" id="label1">Peso</label>
+			<input type="text" name="valor1" id="valor1" value="" class="form-control">
+
+			<div id="alerta1" class="alert alert-danger" style="display: none">
+				<span>Preencha o primeiro valor corretamente!</span>
+			</div>
+		</div>
+
+		<div id="grupo2" class="form-group">
+			<label for="valor2" id="label2">Altura</label>
+			<input type="text" name="valor2" id="valor2" value="" class="form-control">
+
+			<div id="alerta2" class="alert alert-danger" style="display: none">
+				<span>Preencha o segundo valor corretamente!</span>
+			</div>
+
+		</div>
+
+		<div id="resultado" class="form-group">
+			<label for="resultado">Resultado</label>
+			<input type="text" name="resultado" id="resultado" value="" class="form-control" disabled>
+		</div>
+
+		<div id="pesoidealmin" class="form-group">
+			<label for="pesoidealmin">Peso Ideal Minimo</label>
+			<input type="text" name="pesoidealmin" id="pesoidealmin" value="" class="form-control" disabled>
+		</div>
+
+		<div id="pesoidealmax" class="form-group">
+			<label for="pesoidealmaxx">Peso Ideal Maximo</label>
+			<input type="text" name="pesoidealmax" id="pesoidealmax" value="" class="form-control" disabled>
+		</div>
+
+		<input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+
+		<input type="reset" name="" value="Limpar" class="btn btn-warning">
+
+	</form>
+
+</body>
+</html>

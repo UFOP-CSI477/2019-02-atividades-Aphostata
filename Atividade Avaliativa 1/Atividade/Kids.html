@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<title>Kids</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+	<script src="kids.js"></script>
+
+	<style>
+		h1 {
+			text-align: center;
+			font-family: Comic Sans MS;
+			font-size: 50px;
+			font-weight: bold;
+			color: black;
+		}
+
+		input{
+			text-align: center;
+			width: 50%;
+			padding: 3px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		label{
+			font-family: fantasy;
+			font-size: 50pt;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			padding: 20px;
+		}
+		.grid-item {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 30px;
+			font-size: 20px;
+			text-align: center;
+		}
+		button{
+			text-align: center;
+			width: 100%;
+			height: 50px;
+			font-family: Comic Sans MS;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		<h1>Escreva o nome dos objetos</h1>
+	</div>
+	<form name="dados">
+		
+
+
+		<div class="grid-container">
+			<div class="grid-item">
+				<img src="Gato.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<label for="gato" id="gato"></label>
+				<input type="text" name="gato" id="gato">
+
+				<div id="alertagato" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertagatosuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+
+			</div>
+			<div class="grid-item">	
+				<img src="Cachorro.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<label for="cachorro" id="cachorro"></label>
+				<input type="text" name="cachorro" id="cachorro" value="">
+
+				<div id="alertacachorro" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertacachorrosuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+
+			<div class="grid-item">
+				<img src="Maca.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<label for="maca" id="maca"></label>
+				<input type="text" name="maca" id="maca" value="">
+
+				<div id="alertamaca" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertamacasuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Bola.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<label for="bola" id="bola"></label>
+				<input type="text" name="bola" id="bola" value="">
+
+				<div id="alertabola" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertabolasuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Televisao.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<label for="televisao" id="televisao"></label>
+				<input type="text" name="televisao" id="televisao" value="">
+
+				<div id="alertatelevisao" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertatelevisaosuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Cadeira.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<input type="text" name="cadeira" id="cadeira" value="">
+
+				<div id="alertacadeira" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertacadeirasuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Lapis.png" alt="some text" width=100 height=100 align="center">
+				<br>
+				<input type="text" name="lapis" id="lapis" value="">
+
+				<div id="alertalapis" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertalapissuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Bicicleta.png" alt="some text" width=100 height=100 align="center">
+				<br>
+				<input type="text" name="bicicleta" id="bicicleta" value="">
+
+				<div id="alertabicicleta" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertabicicletasuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+			<div class="grid-item">
+				<img src="Sol.jfif" alt="some text" width=100 height=100 align="center">
+				<br>
+				<input type="text" name="sol" id="sol" value="">
+
+				<div id="alertasol" class="alert alert-danger" style="display: none">
+					<span>Ooops! Você Errou.</span>
+				</div>
+				<div id="alertasolsuc" class="alert alert-success" style="display: none">
+					<span>Parabéns.Você Acertou!</span>
+				</div>
+			</div>
+
+		</div>
+	</form>
+
+	<button type="buton" onclick="verificar()" class="btn btn-success"> Verificar Resposta </button>
+
+	<br>
+	<br>
+	<br>
+
+</body>
+</html>
